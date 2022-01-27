@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://assets.nflxext.com/ffe/siteui/vlv3/61b1ed99-aa5e-4310-91cb-317f7140c653/e626d646-ce59-4425-861a-d0e419dded74/BR-pt-20211220-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-position: top center;
+    font-size: 70%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 4rem;
+}
+
+header div{
+    text-align: right;
+    margin: auto 0;
+}
+
+div #lingua, div #entrar{
+    padding: 0.5rem;
+    margin: 0 1rem;
+}
+
+div #lingua{
+    background: rgba(0, 0, 0, 0.685);
+    color: white;
+    border: 0.01rem solid white;
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+div #entrar{
+    background: red;
+    color: white;
+    width: 4.5rem;
+    height: 2.5rem;
+    border-radius: 10%;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+header h1{
+    text-transform: uppercase;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/*TEXTOS EMAIL*/
+section{
+    color: white;
+    text-align: center;
+    width: 50rem;
+    margin: 10rem auto;
+}
+
+section h1{
+    font-size: 4rem;
+    margin: 0.5rem 0;
+}
+section h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+section h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#email{
+    width: 35rem;
+    height: 2rem;
+    padding: 1rem;
+    margin: 0 0.05rem;
+}
+
+.label{
+    color: white;
+    font-size: 1.5rem;
+    background: red;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 800px){
+    section{
+        width: 40rem;
+        margin: 7rem auto;
+    }
+    
+    section h1{
+        font-size: 3rem;
+    }
+    section h2{
+        font-size: 1.2rem;
+    }
+    section h3{
+        font-size: 1rem;
+    }
+    
+    #email{
+        width: 20rem;
+        height: 1em;
+    }
+    
+    .label{
+        font-size: 1rem;
+        padding: 0.8rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 650px){
+    header{
+        margin: 1rem;
+    }
+    
+    div #lingua, div #entrar{
+        padding: 0.5rem;
+        margin: 0 1rem;
+    }
+    
+    div #lingua{
+        width: 5rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+    
+    div #entrar{
+        width: 3.5rem;
+        border-radius: 10%;
+        font-size: 0.8rem;
+    }
+
+    section{
+        width: 30rem;
+    }
+    
+    section h1{
+        font-size: 2rem;
+    }
+    section h2{
+        font-size: 1rem;
+    }
+    section h3{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px){
+
+    section{
+        width: 20rem;
+    }
+    
+    section h1{
+        font-size: 1.5rem;
+    }
+    section h2{
+        font-size: 0.8rem;
+    }
+    section h3{
+        font-size: 0.7rem;
+    }
+
+    #email{
+        width: 10rem;
+    }
+
+    .label{
+        font-size: 1rem;
+    }
+}
